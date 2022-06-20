@@ -111,7 +111,7 @@ def jogo():
             gameDisplay.fill(branco)    
 
             pontos +=1
-            pontuacao = fonte.render(f"Pontos: {pontos}", True, preto)
+            pontuacao = fonte.render(f"Score: {pontos}", True, preto)
             gameDisplay.blit(pontuacao, (20, 20))
             if pontos%1000==0:
                 pygame.mixer.Sound.play(pontosSound)
